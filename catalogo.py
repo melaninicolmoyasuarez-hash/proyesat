@@ -45,7 +45,7 @@ def contar_por_grupo(registros):
         conteo[g] = conteo.get(g, 0) + 1
     return conteo
 
-def lanzamiento_por_anio(registros):
+def lanzamientos_por_anio(registros):
     """devuelve un diccionario {año: cantidad de satelites lanzados en ese año}"""
     conteo = {}
     for r in registros:

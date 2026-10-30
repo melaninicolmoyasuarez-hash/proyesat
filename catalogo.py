@@ -49,7 +49,7 @@ def lanzamientos_por_anio(registros):
     """devuelve un diccionario {año: cantidad de satelites lanzados en ese año}"""
     conteo = {}
     for r in registros:
-        anio= anio_lanzamiento(r)
+        anio = anio_lanzamiento(r)
         if anio > 0 :
             conteo[anio] = conteo.get(anio, 0) + 1
     return conteo

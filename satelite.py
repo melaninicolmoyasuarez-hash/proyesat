@@ -27,11 +27,11 @@ class Satelite:
 
     def __str__(self):
         """presentacion"""
-        return f"{self.nombre} | {self.tipo_orbita} | {self.altitud} km"
+        return f"{self.nombre} | {self.tipo_orbita()} | {self.altitud} km"
 
 def crear_satelites(registros, momento):
     """devuelve una lista de objetos satelite con su posicion en 'momento'"""
-    satelites= []
+    satelites = []
     for registro in registros:
         try: 
             obj_skyfield = crear_objeto_skyfield(registro)
